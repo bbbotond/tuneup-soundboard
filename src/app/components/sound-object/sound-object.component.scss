@@ -1,0 +1,54 @@
+.sound-object {
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    position: relative;
+
+    .image-outer {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0.5em;
+    }
+
+    .profile-picture {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .play-button {
+        position: absolute;
+        width: 100px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    p {
+        color: #fff;
+        font-size: 14px;
+        margin: 5px 0px 0px 0px;
+    }
+}
+
+@media (max-width: 767px) {
+    .sound-object {
+        margin: 10px;
+
+        .profile-picture {
+            width: 85px;
+            height: 85px;
+        }
+
+        .play-button {
+            width: 65px;
+        }
+
+        p {
+            font-size: 13px;
+        }
+    }
+}

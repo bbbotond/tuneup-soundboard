@@ -1,0 +1,7 @@
+<div class="sound-object" (click)="soundObjectOnClick()">
+    <div class="image-outer">
+        <img *ngIf="ActivePlaying" class="play-button" src="./assets/play_button.svg">
+        <img class="profile-picture" [src]="ProfilePictureImage"/>
+    </div>
+    <p>{{ SoundObject.Description }}</p>
+</div>

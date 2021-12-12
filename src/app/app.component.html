@@ -1,0 +1,10 @@
+<div id="header">
+  <img src="./assets/logo.jpg" />
+  <h1>Tune Up Radio Soundboard</h1>
+</div>
+
+<div id="sound-objects-outer">
+  <div class="sound-object-outer" *ngFor="let soundObject of soundObjects">
+    <app-sound-object [SoundObject]="soundObject"></app-sound-object>
+  </div>
+</div>
